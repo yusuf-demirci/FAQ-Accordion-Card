@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+}
+.container {
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.images {
+    flex: 1;
+    position: relative;
+}
+.shadow {
+    position: absolute;
+    top: -270px;
+    left: -500px;
+    width: 200%;
+}
+.woman {
+    position: absolute;
+    top: 50px;
+    left: -55px;
+    width: 100%;
+}
+.box {
+    position: absolute;
+    margin-top: 12%;
+    z-index: 1;
+}
+.faq {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.faq h1 {
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    color: hsl(237, 12%, 33%)
+}
+.question label:hover, .question img:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+p {
+    display: none;
+    color: hsl(240, 6%, 50%);
+}
+hr {
+    width: 87%;
+    border-style: none;
+    border-top: 1px solid hsl(240, 5%, 91%);
+}
