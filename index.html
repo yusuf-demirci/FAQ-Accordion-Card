@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./index.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,54 +17,62 @@
 </head>
 
 <body>
-  <div class="container">
-    <img class="box" src="./images/illustration-box-desktop.svg" alt="">
-    <section class="images">
-      <img class="shadow" src="./images/bg-pattern-desktop.svg" alt="">
-      <img class="woman" src="./images/illustration-woman-online-desktop.svg" alt="">
-    </section>
+  <div class="outer">
+    <img class="box desktop" src="./images/illustration-box-desktop.svg" alt="">
+    <div class="container">
 
-    <section class="faq">
-      <h1>FAQ</h1>
+      <section class="images">
+        <img class="shadow desktop" src="./images/bg-pattern-desktop.svg" alt="">
+        <img class="woman desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
 
-      <div class="question">
-        <label for="">How many team members can I invite?</label>
-        <img src="./images/icon-arrow-down.svg" alt="">
-      </div>
-      <p>You can invite up to 2 additional users on the Free plan. There is no limit on
-        team members for the Premium plan.</p>
-      <hr>
-      <div class="question">
-        <label for="">What is the maximum file upload size?</label>
-        <img src="./images/icon-arrow-down.svg" alt="">
-      </div>
-      <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-      <hr>
-      <div class="question">
-        <label for="">How do I reset my password?</label>
-        <img src="./images/icon-arrow-down.svg" alt="">
-      </div>
-      <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.</p>
-      <hr>
-      <div class="question">
-        <label for="">Can I cancel my subscription?</label>
-        <img src="./images/icon-arrow-down.svg" alt="">
-      </div>
-      <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-      <hr>
-      <div class="question">
-        <label for="">Do you provide additional support?</label>
-        <img src="./images/icon-arrow-down.svg" alt="">
-      </div>
-      <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-      <hr>
+        <img class="shadow mobile" src="./images/bg-pattern-mobile.svg" alt="">
+        <img class="woman mobile" src="./images/illustration-woman-online-mobile.svg" alt="">
+      </section>
 
+      <section class="faq">
+        <h1>FAQ</h1>
 
-    </section>
+        <div class="question" accesskey="1">
+          <label for="">How many team members can I invite?</label>
+          <img class="arrow" accesskey="1" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <p accesskey="1">You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+        <hr>
 
+        <div class="question" accesskey="2">
+          <label for="">What is the maximum file upload size?</label>
+          <img class="arrow" accesskey="2" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <p accesskey="2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        <hr>
+
+        <div class="question" accesskey="3">
+          <label for="">How do I reset my password?</label>
+          <img class="arrow" accesskey="3" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <p accesskey="3">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+        <hr>
+
+        <div class="question" accesskey="4">
+          <label for="">Can I cancel my subscription?</label>
+          <img class="arrow" accesskey="4" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <p accesskey="4">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        <hr>
+
+        <div class="question" accesskey="5">
+          <label for="">Do you provide additional support?</label>
+          <img class="arrow" accesskey="5" src="./images/icon-arrow-down.svg" alt="">
+        </div>
+        <p accesskey="5">Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+        <hr>
+
+      </section>
+    </div>
   </div>
-
 </body>
 
 </html>
