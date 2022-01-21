@@ -13,3 +13,7 @@ Users should be able to:
 ### Screenshot
 
 ![./screenshot.png](./images/screenshot.png)
+
+### Links
+
+- Live Site URL: [https://yusuf-demirci.github.io/FAQ-Accordion-Card/](https://yusuf-demirci.github.io/FAQ-Accordion-Card/)
