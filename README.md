@@ -17,3 +17,10 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://yusuf-demirci.github.io/FAQ-Accordion-Card/](https://yusuf-demirci.github.io/FAQ-Accordion-Card/)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
