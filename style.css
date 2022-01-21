@@ -13,8 +13,12 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 14px;
 }
+.outer {
+    position: relative;
+    margin: auto;
+}
 .container {
-    width: 900px;
+    width: 800px;
     height: 450px;
     margin: auto;
     padding: 30px;
@@ -27,22 +31,27 @@ body {
     flex: 1;
     position: relative;
 }
-.shadow {
+.shadow.desktop {
     position: absolute;
-    top: -270px;
-    left: -500px;
-    width: 200%;
+    top: -290px;
+    left: -560px;
+    width: 240%;
 }
-.woman {
+.woman.desktop {
     position: absolute;
     top: 50px;
-    left: -55px;
-    width: 100%;
+    left: -100px;
+    width: 115%;
 }
-.box {
+.box.desktop {
     position: absolute;
-    margin-top: 12%;
+    top: 200px;
+    left: -95px;
+    width: 23%;
     z-index: 1;
+}
+.mobile {
+    display: none;
 }
 .faq {
     flex: 1;
@@ -52,7 +61,7 @@ body {
     justify-content: space-evenly;
 }
 .faq h1 {
-    margin-bottom: 10%;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
@@ -60,7 +69,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 95%;
     color: hsl(237, 12%, 33%)
 }
 .question label:hover, .question img:hover {
@@ -75,4 +84,78 @@ hr {
     width: 87%;
     border-style: none;
     border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+.display {
+    display: block;
+}
+.bold {
+    font-weight: 700;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 600px;
+    }
+    .shadow.desktop {
+        top: -180px;
+        left: -415px;
+        width: 250%;
+    }
+    .woman.desktop {
+        top: 70px;
+        left: -90px;
+        width: 130%;
+    }
+    .box.desktop {
+        top: 200px;
+        left: -70px;
+        width: 23%;
+    }
+    .question {
+        width: 100%;
+    }
+}
+@media (max-width: 720px) {
+    .outer {
+        margin-top: 11rem;
+    }
+    .container {
+        width: 320px;
+        flex-direction: column;
+        overflow: visible;
+        padding: 10px;
+    }
+    .desktop {
+        display: none;
+    }
+    .shadow.mobile {
+        display: inline-block;
+        position: absolute;
+        top: -18px;
+        left: 30px;
+        width: 80%;
+    }
+    .woman.mobile {
+        display: inline-block;
+        position: absolute;
+        top: -130px;
+        left: 30px;
+        width: 80%;
+    }
+    .faq {
+        flex: 6;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .faq h1 {
+        text-align: center;
+    }
+ 
+    .question {
+        width: 100%;
+    }
 }
